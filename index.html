@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kitten Krazy</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="icon" href="resources\images\A20D949E-017C-4111-9BDD-FC4C8FC00A25.ico" type="image/x-icon">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="resources\js\main.js"></script>
+  <script src="resources\js-ui\jquery-ui.js"></script>
+  <link rel="stylesheet" href="resources\css\style.css">
+  <link rel="stylesheet" href="resources\js-ui\jquery-ui.css">
+  <!--accordion-->
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  <!--draggable-->
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+  <!--resizable-->
+  <script>
+  $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
+  <!--buttons-->
+  <script>
+  $( function() {
+    $( ".widget button, .widget a" ).button();
+    $( "button" ).click( function( event ) {
+      event.preventDefault();
+    } );
+  } );
+  </script>
+  <script>
+  $( function() {
+    $('#toggle-nav').click(function() {
+    $('h1').toggleClass('animate', 700);
+});
+});
+</script>
+</head>
+<body>
+
+  <!--Header-->
+  <nav class="navbar navbar-toggleable navbar-light fixed-top ui-widget-content">
+    <a class="navbar-brand" href="#">
+      <img alt="home" src="resources\images\A20D949E-017C-4111-9BDD-FC4C8FC00A25.svg">
+      <span>KITTEN</span>
+      <span id="light">KRAZY</span>
+    </a>
+    <button class="ui-button" id="toggle-nav">Animate</button>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   <!--navbar-->
+    <div class="collapse navbar-collapse" id="navbartoggle">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item active ui-state-disabled">
+          <a class="home" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="star.html">Star</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="casper.html">Casper</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="lion.html">Lion</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="noel.html">Noel</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="eve.html">Eve</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="bean.html">Bean</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+
+  <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid" id="jumbo-background">
+    <div class="container-fluid">
+      <h1>Ready for a kittypocalypse?</h1>
+      <div class="widget">
+        <button class="ui-button">Yes</button>
+        <a class="ui-button" href="http://play.barney.com/usa/">No</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid ui-state-error" style="text-align: center;">
+    <h1>BREAKING: CASPER IS GROUNDED!</h1>
+  </div>
+
+  <!--Homepage cat pics -->
+  <div class="container-fluid">
+    <div class="row justify-content-around ui-widget-content"  style="border: none!important;">
+      <div class="col-sm-3 maincatpics no-bottom-margin" id="star-ref">
+        <img class="home-cat-pics" src="resources\images\Star-home.jpg" alt="">
+        <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Star  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+      </div>
+      <div class="col-sm-3 maincatpics no-bottom-margin" id="casper-ref">
+        <img class="home-cat-pics" src="resources\images\Casper-home.jpg" alt="">
+        <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Casper  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+      </div>
+      <div class="col-sm-3 maincatpics no-bottom-margin" id='lion-ref'>
+        <img class="home-cat-pics" src="resources\images\Lion-home.jpg" alt="">
+        <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Lion  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+      </div>
+    </div>
+      <div class="row justify-content-around ui-widget-content"  style="border: none!important;">
+        <div class="col-sm-3 maincatpics" id='noel-ref'>
+          <img class="home-cat-pics" src="resources\images\Noel-home.jpg" alt="">
+          <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Noel  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+        </div>
+        <div class="col-sm-3 maincatpics" id="eve-ref">
+          <img class="home-cat-pics" src="resources\images\Eve-home.jpg" alt="">
+          <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Eve  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+        </div>
+        <div class="col-sm-3 maincatpics" id="bean-ref">
+          <img class="home-cat-pics" src="resources\images\Bean-home.jpg" alt="">
+          <h3><i style="color: red" class="fas fa-heart fa-spin"></i>  Bean  <i style="color: red" class="fas fa-heart fa-spin"></i></h3>
+        </div>
+      </div>
+    </div>
+
+    <!--The kittens love...-->
+    <div class="container-fluid kittens-love ui-widget-content" style="border: none!important;">
+      <div class="row">
+        <div class="col" style="text-align: center">
+          <h1>The kittens love...</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="fa-ul">
+            <li><span style="color: silver" class="fa-li"><i class="fas fa-bicycle fa-spin"></i></span>Biking</li>
+            <li><span style="color: green" class="fa-li"><i class="fas fa-bowling-ball fa-spin"></i></span>Bowling</li>
+            <li><span style="color: purple" class="fa-li"><i class="fas fa-bed fa-spin"></i></span>Sleeping</li>
+            <li><span style="color: darkorange" class="fa-li"><i class="fas fa-camera fa-spin"></i></span>Pictures</li>
+            <li><span style="color: red" class="fa-li"><i class="fas fa-fire fa-spin"></i></span>Fire</li>
+            <li><span style="color: aqua" class="fa-li"><i class="fas fa-home fa-spin"></i></span>Window Sitting</li>
+            <li><span style="color: #092ba5" class="fa-li"><i class="fas fa-tv fa-spin"></i></span>TV</li>
+            <li><span style="color: pink" class="fa-li"><i class="fas fa-magic fa-spin"></i></span>Magic</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="fa-ul">
+            <li><span style="color: silver" class="fa-li"><i class="fas fa-bath fa-spin"></i></span>Showers</li>
+            <li><span style="color: green" class="fa-li"><i class="fas fa-birthday-cake fa-spin"></i></span>Cream</li>
+            <li><span style="color: purple" class="fa-li"><i class="fas fa-boxes fa-spin"></i></span>Boxes</li>
+            <li><span style="color: darkorange" class="fa-li"><i class="fas fa-chart-line fa-spin"></i></span>Cryptos</li>
+            <li><span style="color: red" class="fa-li"><i class="fas fa-eye fa-spin"></i></span>Stalking</li>
+            <li><span style="color: aqua" class="fa-li"><i class="fas fa-envelope fa-spin"></i></span>Mail</li>
+            <li><span style="color: #092ba5" class="fa-li"><i class="fas fa-flask fa-spin"></i></span>Experiments</li>
+            <li><span style="color: pink" class="fa-li"><i class="fas fa-gem fa-spin"></i></span>Toys</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="fa-ul">
+            <li><span style="color: silver" class="fa-li"><i class="fas fa-gift fa-spin"></i></span>Gifts</li>
+            <li><span style="color: green" class="fa-li"><i class="fas fa-moon fa-spin"></i></span>Nighttime</li>
+            <li><span style="color: purple" class="fa-li"><i class="fas fa-music fa-spin"></i></span>Singing</li>
+            <li><span style="color: darkorange" class="fa-li"><i class="fas fa-utensils fa-spin"></i></span>Wet Food</li>
+            <li><span style="color: red" class="fa-li"><i class="fas fa-shopping-cart fa-spin"></i></span>Groceries</li>
+            <li><span style="color: aqua" class="fa-li"><i class="fas fa-tree fa-spin"></i></span>Trees</li>
+            <li><span style="color: #092ba5" class="fa-li"><i class="fas fa-key fa-spin"></i></span>Keys</li>
+            <li><span style="color: pink" class="fa-li"><i class="fas fa-paw fa-spin"></i></span>Making Messes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--accordion-->
+    <div id="accordion">
+  <h3>Star's Fun Facts</h3>
+  <div>
+    <p>
+    Star was the first kitten in the house to begin jumping up on the kitchen counters. After he started, he soon got all of the other kitties to jump up there as well.
+    He was the second to learn manners. After he lets out a big kitten sneeze, his humans bless him and he replies with either a "thanks" or an "excuse me". His humans obviously have no way of telling what his meows mean, they just know he's doing something unusual for a feline.
+    </p>
+  </div>
+  <h3>Casper's Fun Facts</h3>
+  <div>
+    <p>
+      Somehow the sweetest yet meanest. He is known as Evie's number one bully. Casper was the second kitten to be found napping under the bathroom sink.
+
+    </p>
+  </div>
+  <h3>Lion's Fun Facts</h3>
+  <div>
+    <p>
+    Lion was the first kitten to learn manners; in fact, he was born with them. When his humans first picked him up to bring him home, he was the first to begin making connections with them through long periods of eye contact.
+    It was so prominent on that day that his humans continue to say that his wide, loving eyes make him look like an adorable owl.
+    </p>
+    <ul>
+      <li>:)</li>
+      <li>:(</li>
+      <li>:|</li>
+    </ul>
+  </div>
+  <h3>Noel's Fun Facts</h3>
+  <div>
+    <p>
+    Noel was the first of the bunch to be given a middle name, which she was given because she looks like a kangaroo. She was also the first to singe a few of her belly hairs on a Montana Magic Candle.
+    Her humans didn't think she knew what was going on, but luckily they were right there to save her and show her that fire is "OUCH!".
+    Perhaps from burning her hair, or perhaps just because she's Noel, she developed a love of wax. Her humans make homemade candles and Noel loves to join them as they scoop out wax to melt. She's even tried running off with some before to play with.
+    She is the first kitty to sleep in sinks regularly.
+    </p>
+  </div>
+  <h3>Eve's Fun Facts</h3>
+  <div>
+    <p>
+  She doesn't like to speak of it, but Evie once did happen to have an accident in the bedroom one night. She forgot to go before bedtime, something her humans have somehow trained a from-stray-to-indoor-kitten to know how to do.
+  She was the first kitten to be Photoshopped. Eve was also the first to be a bathroom kitten in quarentine. She has no problem walking across her human's necks at night and can usually be found hogging one of their pillows.
+    </p>
+  </div>
+  <h3>Bean's Fun Facts</h3>
+  <div>
+    <p>
+    Even though he is the youngest and smallest baby kitten in the house, he is the heaviest and widest. All his humans care about, though, is his health. It's actually better for him to have a few extra ounces in case of his URI flaring up.
+    He takes burrying leftover food very seriously and is willing to knock things over and move them across the room just to slightly cover his meal.
+    </p>
+    <ul>
+      <li>:o</li>
+      <li>:/</li>
+      <li>:')</li>
+    </ul>
+  </div>
+</div>
+
+    <!--draggable-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8 ui-widget-content" style="color: white;">
+          <h1>It's dangerous to go alone; take party Evie with you!</h1>
+        </div>
+        <div class="col-sm-4 ui-widget-content">
+          <div id="draggable" style="display: inline-block;"><img id="resizable" class="ui-resizable" src="resources\images\Eve-new-years.jpg" alt="New Years Eve"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--footer-->
+      <div class="container-fluid">
+      <div class="row footer ui-widget-content" style="border: none!important;">
+        <div class="col" style="text-align: left!important">
+          <span>© 2018 KittenKrazy</span>
+        </div>
+        <div class="col" style="text-align: right!important">
+          <span>If you want to go to the top, hit the logo!</span>
+        </div>
+      </div>
+    </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
